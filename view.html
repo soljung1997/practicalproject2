@@ -46,6 +46,17 @@
             window.location.href = editLink;
             }
         </script>
+        <script>
+            function confirmDelete() {
+                if (confirm("Are you sure you want to delete this page?")) {
+                    // User confirmed, show "Page has been deleted" message
+                    alert("Page has been deleted");
+                    
+                    // Redirect to index.html
+                    window.location.href = "index.html";
+                }
+            }
+        </script>
 
 
     
@@ -199,7 +210,7 @@
                                 <a class="btn btn-sm btn-outline-secondary" href="#" onclick="editPost(this)">Edit</a>
                             </div>
                             <div class="col">
-                              <a class="btn btn-sm btn-outline-secondary" href="view.html">Read</a>
+                                <a class="btn btn-sm btn-outline-secondary" type="submit" onclick="confirmDelete()">Delete</a>
                             </div>
                           </div>
                       </div>
@@ -220,7 +231,7 @@
                                 <a class="btn btn-sm btn-outline-secondary" href="#" onclick="editPost(this)">Edit</a>
                             </div>
                             <div class="col">
-                              <a class="btn btn-sm btn-outline-secondary" href="view.html">Read</a>
+                                <a class="btn btn-sm btn-outline-secondary" type="submit" onclick="confirmDelete()">Delete</a>
                             </div>
                           </div>
                       </div>
@@ -241,7 +252,7 @@
                                 <a class="btn btn-sm btn-outline-secondary" href="#" onclick="editPost(this)">Edit</a>
                             </div>
                             <div class="col">
-                              <a class="btn btn-sm btn-outline-secondary" href="view.html">Read</a>
+                                <a class="btn btn-sm btn-outline-secondary" type="submit" onclick="confirmDelete()">Delete</a>
                             </div>
                           </div>
                       </div>
@@ -262,7 +273,7 @@
                                 <a class="btn btn-sm btn-outline-secondary" href="#" onclick="editPost(this)">Edit</a>
                             </div>
                             <div class="col">
-                              <a class="btn btn-sm btn-outline-secondary" href="view.html">Read</a>
+                                <a class="btn btn-sm btn-outline-secondary" type="submit" onclick="confirmDelete()">Delete</a>
                             </div>
                           </div>
                       </div>
@@ -282,8 +293,9 @@
                             <div class="col">
                                 <a class="btn btn-sm btn-outline-secondary" href="#" onclick="editPost(this)">Edit</a>
                             </div>
+                            
                             <div class="col">
-                              <a class="btn btn-sm btn-outline-secondary" href="view.html">Read</a>
+                                <a class="btn btn-sm btn-outline-secondary" type="submit" onclick="confirmDelete()">Delete</a>
                             </div>
                           </div>
                         </div>
@@ -304,7 +316,7 @@
                                 <a class="btn btn-sm btn-outline-secondary" href="#" onclick="editPost(this)">Edit</a>
                             </div>
                             <div class="col">
-                              <a class="btn btn-sm btn-outline-secondary" href="view.html">Read</a>
+                                <a class="btn btn-sm btn-outline-secondary" type="submit" onclick="confirmDelete()">Delete</a>
                             </div>
                           </div>
                           
